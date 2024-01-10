@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+   <nav>
+    <label class="logo"> DESIGN X</label>
+    <ul class="sidebar">
+        <li><a href="#" class="active">home</a></li>
+        <li><a href="#">services</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">feedback</a></li>
+        <li><a href="#">contact</a></li>
+    </ul>
+    <div class="menu">&#9776;</div>
+   </nav>
+    <script>
+        let menu = document.querySelector(".menu")
+        let sidebar = document.querySelector(".sidebar")
+        menu.addEventListener("click", () => {
+          sidebar.classList.toggle("open")
+        })
+    </script>
+</body>
+</html>
