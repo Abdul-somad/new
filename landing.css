@@ -1,0 +1,359 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-decoration:none;
+}
+body{
+    background:rgba(225, 255, 255, 0.8);
+    font-family: ;
+    font-size: 18px;
+}
+header{
+    position:fixed;
+    background:#fff;
+    height:auto;
+    width:100%;
+    z-index:10;
+    margin:auto;
+    
+}
+.head{
+    width:90%;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    padding:10px;
+    margin:0 auto;
+}
+.menu{
+    display:none;
+    font-size: 25px;
+    cursor:pointer;
+    padding:5px
+}
+.menu i{
+    cursor: pointer;
+    display:none;
+    position:absolute;
+    right:5%;
+    
+
+}
+.menu i:hover {
+    color:rgba(84, 204, 204, 0.6);
+    transition: all 0.5s linear
+}
+.hero{
+    margin-left:30px
+}
+header .hero-head{
+    color:rgba(0, 0, 0, 0.8);
+    font-weight:bold;
+    cursor:pointer;
+}
+.navbar ul li{
+    display:inline-block;
+    margin-left:15px;
+    text-transform:capitalize;
+    position:relative;
+}
+.navbar ul li a{
+    color:rgb(0, 0, 0, 0.8);
+}
+.navbar li a::after{
+    content:"";
+    position:absolute;
+    background:rgba(84, 204, 204, 0.6);
+    width: 0%;
+    height:2px;
+    top:100%;
+    left:0;   
+    transition:all .3s linear;
+}
+.navbar li a:hover::after{
+  width:100%;
+}
+header .hero-para a{
+    font-size:1.2rem;
+    text-transform: capitalize;
+    color:rgba(255, 255, 255, 0.9);
+    background: #f80;
+    padding:12px;
+    transition: all .4s linear;
+    border-radius:25px;
+    border:2px solid #f80;
+    
+}
+header .hero-para a:hover{
+border:2px solid #f80;
+background: none;
+color:rgb(207, 124, 30);
+}
+.showcase{
+    width:100%;
+    height:100vh;
+    padding:20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.showcase-1{
+     padding:100px;
+     text-transform:capitalize;
+}
+.showcase-1 .word{
+    padding-bottom: 30px;
+    opacity: 0.4;
+    text-transform: uppercase;
+    color:#f80;
+}
+.showcase-1 .text{
+    font-size:17px;
+    line-height: 1.5rem;
+    opacity:0.8
+}
+h2{
+    color:#d99058;
+    padding-bottom:20px;
+    font-size: 1.7rem;
+    font-weight: 800;
+    line-height:2rem;
+}
+.showcase-1 a{
+    position:relative;
+    top: 40px;
+    padding-inline:20px;
+
+}
+.first{
+    background:#d99058;
+    color:rgba(255, 255, 255, 0.9);
+    padding:5px;
+    border-radius:5px;
+    border:1px solid #d99058;
+    transition: all .7s ease-in;
+}
+.first:hover{
+    background: none;
+    border:1px solid #d99058;
+    color:#2b2121
+}
+.second{
+    border:1px solid rgba(44, 42, 42, 0.322);
+    BORDER-RADIUS:5PX;
+    padding: 5px;
+    margin-left:15px;
+    color:#2b2121;
+    transition: all .7s ease-out;
+}
+.second:hover{
+ color:#d99058;
+}
+.showcase-img{
+    margin-right:50px;
+    margin-top:50px
+}
+.showcase-img .pics{
+    background-position: right 0px;
+    background-size:cover;
+    width:450px;
+    height:450px;
+    border-radius: 80px 0 80px; 
+}
+.portfolio{
+    width:100%;
+    height:100vh;
+    background:hsl(57, 18, 100);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+}
+.portf-img{
+    width:100%;
+    height:45vh;
+    margin-top:30px;
+    background:#eee;
+    position:relative;
+    display:grid;
+}
+.portf-pics{
+    position:absolute;
+    justify-self: center;
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    background-position:center;
+    background-size:contain;
+    top:30%;
+    border:3px solid rgba(255, 255, 255, 0.9)
+}
+.portf-word{
+    position:relative;
+    margin-top:130px;
+    align-self: center;
+    padding: 20px;
+}
+h5{
+    text-align:center;
+    word-spacing: 4px;
+    font-size:1.5rem;
+    cursor:pointer
+}
+h5 span{
+    font-style: italic;
+    font-weight:600;
+    color:#d99058;
+}
+.portf-word p{
+    opacity: 0.9;
+    font-style:italic;
+    padding:8px
+}
+.texts{
+    padding:5px;
+    text-transform: capitalize;
+    font-size:18px;
+}
+.texts a{
+    color:#bb4545;
+    transition:all .8s linear;
+}
+.texts a:hover{
+    border-bottom: 1px solid #d99058;
+    color:#f80;
+}
+h6 {
+    padding:10px;
+    margin-bottom:10px;
+}
+h6 a{
+    background: #fff;
+    padding: 5px;
+    border-bottom:2px solid #d99058;
+    border-radius:5px;
+   transition: all .6s linear;
+}
+h6 a:hover{
+    background: none;
+   border:1px solid #d99058;
+}
+footer{
+    background: #fff;
+    text-align:center;
+    padding:25px;
+}
+.last-word{
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.last-word a{
+    color:#d99058
+}
+.last-word a:hover{
+    color:#bb4545;
+    transition:all .8s linear;
+   border-bottom:1px solid #d99058;
+
+}
+@media(max-width:1050px){
+  header{
+    position:static;
+  }
+  .head{
+    display:block;
+    justify-content: center;
+    margin-bottom:20px;
+  }
+  .navbar ul{
+    margin-left:250px
+  }
+ header .hero-para a{
+    position:relative;
+    bottom:50px;
+    left:700px;
+    display:none;
+  }
+  .showcase-1 a{
+   display:block;
+   margin:0 10px 0px 0;
+   text-align:center;
+   font-size:16px;
+  }
+  .showcase-1 a:last-of-type{
+    margin-top:12px
+  }
+}
+@media(max-width:960px){
+   
+    .menu{
+        display:block;
+        position: absolute;
+        right:10%;
+        top:15px
+    }
+    .menu i {
+        display:block;
+        top:10px;
+        font-size: 1.5rem;
+        outline: none;
+        
+    } 
+    .navbar ul.show{
+     right:0;
+
+    }
+    .navbar ul {
+        display:flex;
+        flex-direction: column;
+        position:fixed;
+        border-radius:30px;
+        justify-content: space-between;
+        background:rgba(0, 0, 0, 0.6);
+        right:-250px ;
+        width:250px;
+        padding:50px;
+        height:70%;
+        top:80px; 
+        transition:right 0.2s linear;
+        z-index: 2;
+        
+    }
+    .navbar ul li {
+        text-align: center;
+        margin-bottom: 20px;
+        
+    }
+    .navbar ul li a{
+        color:#ffffffd5;
+    }
+}
+@media (max-width:920px){
+    .menu i {
+    font-size: 1.25rem;
+      
+    }
+  .showcase{
+    display:flex;
+    flex-direction: column;
+    height:100%;
+  }
+  .showcase-img{
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
+  }
+  header {
+    display: flex;
+    flex-wrap: wrap;
+
+
+  }
+  .hero-para {
+    position:static;
+    display: none;
+    
+  }
+}

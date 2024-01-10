@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-80" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="landing.css" />
+    <script src="https://kit.fontawesome.com/eb2ea5823e.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <div class="head">
+        <div class="hero">
+          <h1 class="hero-head">SHAKUR</h1>
+        </div>
+        <nav class="navbar"  id="navbar">
+          <ul id="nan">
+            <li><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">services</a></li>
+            <li><a href="#">portfolio</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </nav>
+        <div class="hero-para"><a href="#">get free consultant</a></div>
+        <div class="menu">&#9776<i class="fa-solid fa-bars"></i></i></div>
+      </div>
+    </header>
+
+    <!-- SHOWCASE -->
+    <section class="showcase">
+      <div class="showcase-1">
+        <p class="word">get every single solution</p>
+        <h2>
+          i'm developer <br />
+          alaro a. shakur
+        </h2>
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor natus
+          consequuntur, voluptatum architecto illum fugiat, oluptas, consectetur
+          eligendi assumenda optio tempore! Inventore adipisci odit ducimus.
+        </p>
+        <a href="#" class="first">learn more </a>
+        <a href="#" id="second" class="second" onclick="hire()">HIRE ME</a>
+      </div>
+      <div class="showcase-img">
+        <img
+          src="images/guy with lady.jpg"
+          class="pics"
+          alt="guy pressing laptop"
+        />
+      </div>
+    </section>
+    <!---- PORTFOLIO ------>
+    <section class="portfolio">
+      <div class="portf-img">
+        <img
+          src="images/excited-afro-american-man-looking-laptop-computer-screen.jpg"
+          class="portf-pics"
+          alt=""
+        />
+      </div>
+      <div class="portf-word">
+        <h5>CREATIVE <span>PORTFOLIO</span></h5>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br />
+          Eos similique sint quo accusantium ex iure laboriosam
+          <br />repellendus quisquam officia.
+        </p>
+      </div>
+      <p class="texts">
+        image from <a href="https://www.unsplash.com">unsplash</a>
+      </p>
+      <h6><a href="#">READ MORE</a></h6>
+    </section>
+    <footer>
+      <p class="last-word">
+        student from <a href="https://www.freecodecamp.com">freecodecamp</a>
+      </p>
+    </footer>
+  <script>
+    let menuEl = document.querySelector(".menu")
+    let navbarEl = document.getElementById("nan")
+    menuEl.addEventListener("click", () => {
+      navbarEl.classList.toggle("show")
+    })
+  </script>
+  </body>
+</html>
